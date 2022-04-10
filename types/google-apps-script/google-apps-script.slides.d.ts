@@ -1064,7 +1064,7 @@ declare namespace GoogleAppsScript {
       insertPageElement(pageElement: PageElement): PageElement;
       insertShape(shape: Shape): Shape;
       insertShape(shapeType: ShapeType): Shape;
-      insertShape(shapeType: ShapeType, left: number, top: number, width: number, height: number): Shape;
+      insertShape(shapeType: ShapeType, left: number, top: number, width: number, height: number): Shape;boo
       insertSheetsChart(sourceChart: Spreadsheet.EmbeddedChart): SheetsChart;
       insertSheetsChart(sourceChart: Spreadsheet.EmbeddedChart, left: number, top: number, width: number, height: number): SheetsChart;
       insertSheetsChart(sheetsChart: SheetsChart): SheetsChart;
@@ -1079,12 +1079,14 @@ declare namespace GoogleAppsScript {
       insertVideo(videoUrl: string, left: number, top: number, width: number, height: number): Video;
       insertVideo(video: Video): Video;
       insertWordArt(wordArt: WordArt): WordArt;
+      isSkipped(): boolean;
       move(index: Integer): void;
       refreshSlide(): void;
       remove(): void;
       replaceAllText(findText: string, replaceText: string): Integer;
       replaceAllText(findText: string, replaceText: string, matchCase: boolean): Integer;
       selectAsCurrentPage(): void;
+      setSkipped(skipped: boolean): void;
       unlink(): void;
     }
     /**
